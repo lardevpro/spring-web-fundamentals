@@ -26,7 +26,7 @@ Editar
 ## Instalación
 
 1. Clona este repositorio:
-git clone https://github.com/lardevpro/spring-web-fundamentals.git
+git clone [https://github.com/lardevpro/spring-web-fundamentals.git](https://github.com/lardevpro/spring-web-fundamentals.git)
 
 markdown
 Copiar
