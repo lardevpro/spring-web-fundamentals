@@ -26,7 +26,7 @@ Editar
 ## Instalación
 
 1. Clona este repositorio:
-git clone https://github.com/tu-usuario/proyecto.git
+git clone https://github.com/lardevpro/spring-web-fundamentals.git
 
 markdown
 Copiar
@@ -39,6 +39,4 @@ Editar
 
 Si deseas contribuir, por favor abre un **issue** o envía un **pull request**.
 
-## Licencia
-
-Este proyecto está bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) 
+ 
