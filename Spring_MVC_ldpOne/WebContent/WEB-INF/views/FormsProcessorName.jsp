@@ -13,7 +13,7 @@
 		<h2>Demostración de cómo se comunica modelo, vista y controlador</h2>
 		
 		${message}
-		
+		<br>
 						<!-- devuelve la raiz del proyecto -->
 	<img alt="imagen fondo" src="${pageContext.request.contextPath}/resources/images/spring.jpg">
 
