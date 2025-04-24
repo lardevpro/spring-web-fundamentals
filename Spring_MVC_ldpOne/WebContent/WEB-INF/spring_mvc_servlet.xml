@@ -12,16 +12,19 @@
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 	<!--  paquete a escanear en busca de componentes -->
-	<context:component-scan base-package="es.pildoras.spring.mvc" />
+	<context:component-scan base-package="es.lardevpro.spring.mvc" />
 
 	<mvc:annotation-driven/>
 
 	<!-- Configuracion del view resolver-->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/vista/" />
+		<property name="prefix" value="/WEB-INF/views/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
+	
+	<!-- recursos externos -->
+	<mvc:resources location="/resources/" mapping="/resources/**" />
 
 </beans>
 
