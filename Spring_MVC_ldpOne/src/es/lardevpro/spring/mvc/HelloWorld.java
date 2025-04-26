@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 @Controller
+@RequestMapping("/ini")
 public class HelloWorld {
 	
 	@RequestMapping("/helloWorldForm")

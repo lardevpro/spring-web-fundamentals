@@ -11,7 +11,9 @@
 		Esta es la página principal
 	</h1>
 	
-	<a href="helloWorldForm">Ir al formulario</a>
+	<a href="ini/helloWorldForm">Ir al formulario</a>
+	<br><br>
+	<a href="user/viewFormRegister">Ir al registro de usuario</a>
 	
 </body>
 </html>

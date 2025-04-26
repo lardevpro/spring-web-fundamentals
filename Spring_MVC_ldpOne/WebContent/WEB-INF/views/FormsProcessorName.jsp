@@ -12,6 +12,7 @@
 	<p><br>
 		<h2>Demostración de cómo se comunica modelo, vista y controlador</h2>
 		
+		
 		${message}
 		<br>
 						<!-- devuelve la raiz del proyecto -->
