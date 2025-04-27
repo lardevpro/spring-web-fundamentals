@@ -12,7 +12,9 @@
 
 	<p><strong>Nombre:</strong> ${currentUser.name}</p>
     <p><strong>Apellido:</strong> ${currentUser.lastName}</p>
-    <p><strong>Sexo:</strong> ${currentUser.sex}</p>
+    <p><strong>Sexo:</strong> ${currentUser.sex.label}</p>
+    <p><strong>País:</strong> ${currentUser.country}</p>
+    
     
 </body>
 </html>

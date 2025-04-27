@@ -1,10 +1,7 @@
 package es.lardevpro.spring.mvc;
 
 
-enum Sex {
-	HOMBRE,
-	MUJER
-}
+
 
 public class User {
 	
@@ -14,6 +11,7 @@ public class User {
 	
 	private Sex sex;
 	
+	private String country;
 	
 	
 	
@@ -40,6 +38,15 @@ public class User {
 	public void setSex(Sex sex) {
 		this.sex = sex;
 	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+	
 	
 
 }

@@ -26,14 +26,18 @@
 	  <br><br>
 	
 	  <div>
-            <form:label path="sex">Sexo:</form:label>
-            <form:select path="sex">
-                <form:options items="${sexOptions}" />
-            </form:select>
+	        <form:label path="sex">Sexo:</form:label>
+	        <form:radiobuttons path="sex" items="${sexOptions}" />
       </div>
 	  <br><br>
+	  <div>
+		  	<form:label path="country">País:</form:label>
+		    <form:select path="country" items="${countryOptions}" />
+	  </div>
+      <br><br>
+	   <div>
             <input type="submit" value="Enviar" />
-        </div>
+       </div>
 	
 	
 	</form:form> 

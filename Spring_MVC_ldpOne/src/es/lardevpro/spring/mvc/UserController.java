@@ -1,5 +1,6 @@
 package es.lardevpro.spring.mvc;
 
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -15,7 +16,13 @@ public class UserController {
 		
 		
 		model.addAttribute("currentUser",new User());
-		model.addAttribute("sexOption",Sex.values());
+		
+		//sexo
+		model.addAttribute("sexOptions", Sex.getSexOptions());
+	    
+	    //país
+	    model.addAttribute("countryOptions", CountryOptions.getCountryOptions());
+
 		
 		return "formUserRegister";
 		
