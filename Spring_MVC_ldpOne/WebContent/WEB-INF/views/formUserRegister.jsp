@@ -9,14 +9,32 @@
 </head>
 <body>
 	
+	
 	<!-- utiliza el objeto del controlador para recoger los datos -->
 	<form:form action="userConfirmation" modelAttribute="currentUser">
 	<br><br>
-	Nombre: <form:input  path="name"/> <!-- debe coincidir con el atributo pero en minúsculas -->
-	<br><br><br>
-	Apellido: <form:input path="lastName"/>
-	<br><br><br>
-	<input type="submit">
+	  <div>
+           <form:label path="name">Nombre:</form:label>
+           <form:input path="name" /><!-- debe coincidir con el atributo pero en minúsculas -->
+      </div>
+	  <br><br>
+	  
+	  <div>
+            <form:label path="lastName">Apellido:</form:label>
+            <form:input path="lastName" />
+      </div>
+	  <br><br>
+	
+	  <div>
+            <form:label path="sex">Sexo:</form:label>
+            <form:select path="sex">
+                <form:options items="${sexOptions}" />
+            </form:select>
+      </div>
+	  <br><br>
+            <input type="submit" value="Enviar" />
+        </div>
+	
 	
 	</form:form> 
 	

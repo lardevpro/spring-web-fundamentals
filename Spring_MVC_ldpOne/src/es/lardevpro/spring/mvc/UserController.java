@@ -12,9 +12,10 @@ public class UserController {
 	@RequestMapping("/viewFormRegister")
 	public String userRegistration(Model model) {
 		
-		User user = new User();
 		
-		model.addAttribute("currentUser",user);
+		
+		model.addAttribute("currentUser",new User());
+		model.addAttribute("sexOption",Sex.values());
 		
 		return "formUserRegister";
 		

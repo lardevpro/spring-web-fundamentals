@@ -8,7 +8,11 @@
 </head>
 <body>
 
-	El usuario ${ currentUser.name }, con apellido ${ currentUser.lastName } ha sido registrado correctamente.
+	<h2>Datos del Usuario Registrado: </h2>
 
+	<p><strong>Nombre:</strong> ${currentUser.name}</p>
+    <p><strong>Apellido:</strong> ${currentUser.lastName}</p>
+    <p><strong>Sexo:</strong> ${currentUser.sex}</p>
+    
 </body>
 </html>
