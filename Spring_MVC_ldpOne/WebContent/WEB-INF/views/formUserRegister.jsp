@@ -16,18 +16,21 @@
 	  <div>
            <form:label path="name">Nombre:</form:label>
            <form:input path="name" /><!-- debe coincidir con el atributo pero en minúsculas -->
+           <form:errors path="name"/>
       </div>
 	  <br><br>
 	  
 	  <div>
             <form:label path="lastName">Apellido:</form:label>
             <form:input path="lastName" />
+            <form:errors path="lastName"/>
       </div>
 	  <br><br>
 	
 	  <div>
-	        <form:label path="sex">Sexo:</form:label>
-	        <form:radiobuttons path="sex" items="${sexOptions}" />
+	       <form:label path="sex">Sexo:</form:label>
+        	<form:radiobuttons path="sex" items="${sexOptions}" />
+        	<form:errors path="sex" cssClass="error" />
       </div>
 	  <br><br>
 	  <div>

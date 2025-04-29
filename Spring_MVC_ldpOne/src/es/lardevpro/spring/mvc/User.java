@@ -1,18 +1,23 @@
 package es.lardevpro.spring.mvc;
 
-
-
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 public class User {
 	
+	@NotNull
+	@Size(min=3, message="Campo requerido")
 	private String name;
 	
+	@NotNull
+	@Size(min=3, message="Campo requerido")
 	private String lastName;
 	
+	@NotNull
 	private Sex sex;
 	
+	@NotNull
 	private String country;
-	
 	
 	
 	public String getName() {

@@ -4,8 +4,9 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public enum Sex {
-    HOMBRE("Hombre"),
-    MUJER("Mujer");
+    MALE("Hombre"),
+    FEMALE("Mujer"),
+    OTHER("Otro");
 
     private final String label;
 
