@@ -8,11 +8,9 @@
 </head>
 <body>
 	<h1>
-		Esta es la página principal
+		Bienvenido a la aplicación
 	</h1>
 	
-	<a href="ini/helloWorldForm">Ir al formulario</a>
-	<br><br>
 	<a href="user/viewFormRegister">Ir al registro de usuario</a>
 	
 </body>

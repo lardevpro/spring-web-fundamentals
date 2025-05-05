@@ -12,6 +12,8 @@
 
 	<p><strong>Nombre:</strong> ${currentUser.name}</p>
     <p><strong>Apellido:</strong> ${currentUser.lastName}</p>
+    <p><strong>Edad:</strong> ${currentUser.age}</p>
+    <p><strong>E-Mail:</strong> ${currentUser.email}</p>
     <p><strong>Sexo:</strong> ${currentUser.sex.label}</p>
     <p><strong>País:</strong> ${currentUser.country}</p>
     
