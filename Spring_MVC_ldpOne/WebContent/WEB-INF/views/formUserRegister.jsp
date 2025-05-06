@@ -40,6 +40,13 @@
              <form:errors path="email" style="color:red"/>
       </div>
 	  <br><br>
+	  
+	  <div>
+            <form:label path="cp">Código Postal:</form:label>
+            <form:input path="cp" />
+             <form:errors path="cp" style="color:red"/>
+      </div>
+	  <br><br>
 	
 	  <div>
 	       <form:label path="sex">Sexo:</form:label>

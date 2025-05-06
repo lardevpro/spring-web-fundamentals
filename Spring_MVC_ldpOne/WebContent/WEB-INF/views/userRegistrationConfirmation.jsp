@@ -14,6 +14,7 @@
     <p><strong>Apellido:</strong> ${currentUser.lastName}</p>
     <p><strong>Edad:</strong> ${currentUser.age}</p>
     <p><strong>E-Mail:</strong> ${currentUser.email}</p>
+    <p><strong>Código Postal:</strong> ${currentUser.cp}</p>
     <p><strong>Sexo:</strong> ${currentUser.sex.label}</p>
     <p><strong>País:</strong> ${currentUser.country}</p>
     

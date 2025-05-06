@@ -4,9 +4,13 @@ package es.lardevpro.spring.mvc;
 
 
 import javax.validation.Valid;
+
+import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -15,6 +19,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/user")
 public class UserController {
 
+	//para validar espacios en blanco
+	@InitBinder
+	public void myBinder(WebDataBinder binder) {
+		
+		StringTrimmerEditor trim = new StringTrimmerEditor(true);
+		
+		binder.registerCustomEditor(String.class, trim);
+		
+	}
+	
+	
 	@RequestMapping("/viewFormRegister")
 	public String userRegistration(Model model) {
 		

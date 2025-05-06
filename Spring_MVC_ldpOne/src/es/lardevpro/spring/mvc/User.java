@@ -4,23 +4,25 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class User {
 	
 	@NotNull
-	@Size(min=3, message="Campo requerido")
+	@Size(min=3, message=" Campo requerido (al menos 3 carácteres)")
 	private String name;
 	
 	@NotNull
-	@Size(min=3, message="Campo requerido")
+	@Size(min=3, message=" Campo requerido (al menos 3 carácteres)")
 	private String lastName;
 	
 	@NotNull
-	@Min(value=10, message="Debe ser mayor de 10 años")
-	@Max(value=100, message="Si tiene más de 100 años debe contactar con soporte")
+	@Min(value=10, message=" Debe ser mayor de 10 años")
+	@Max(value=100, message=" Si tiene más de 100 años debe contactar con soporte")
 	private int age;
 	
+	@NotNull
 	@Email
 	private String email;
 	
@@ -30,7 +32,9 @@ public class User {
 	@NotNull
 	private String country;
 	
-	
+	@NotNull
+	@Pattern(regexp="[0-9]{5}", message=" Deben ser 5 valores numéricos")
+	private String cp;
 	
 	public String getName() {
 		return name;
@@ -79,6 +83,14 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+
+	public String getCp() {
+		return cp;
+	}
+
+	public void setCp(String cp) {
+		this.cp = cp;
+	}
+
 
 }
