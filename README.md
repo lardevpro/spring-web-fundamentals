@@ -13,7 +13,7 @@ Este proyecto utiliza **Spring MVC** para servir recursos estáticos como imáge
 
 ## Descripción
 
-La configuración de `mvc:resources` permite que los recursos estáticos sean accesibles públicamente desde la carpeta `resources/`. Las imágenes y archivos estáticos se visualizan a través de JSP.
+Programa que valida componentes de un formulario para registrar a usuarios usando anotaciones en Spring (es un proyecto en evolución constante con intención de crear un servicio privado donde los clientes harán reservas diarias para el siguiente día en sus establecimientos locales de confianza)
 
 ## Estructura del Proyecto
 
