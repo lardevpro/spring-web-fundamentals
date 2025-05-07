@@ -3,38 +3,40 @@ package es.lardevpro.spring.mvc;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+
+import es.lardevpro.spring.mvc.customValidations.ZipCode;
 
 public class User {
 	
-	@NotNull
-	@Size(min=3, message=" Campo requerido (al menos 3 carácteres)")
+	@NotBlank(message="Debe rellenar el campo Nombre")
+	@Size(min=3, message=" Campo requerido con al menos 3 carácteres")
 	private String name;
 	
-	@NotNull
-	@Size(min=3, message=" Campo requerido (al menos 3 carácteres)")
+	@NotBlank(message="Debe rellenar el campo Apellidos")
+	@Size(min=3, message=" Campo requerido al menos 3 carácteres")
 	private String lastName;
 	
-	@NotNull
+	@NotNull(message = "Debe rellenar el campo Edad")
 	@Min(value=10, message=" Debe ser mayor de 10 años")
 	@Max(value=100, message=" Si tiene más de 100 años debe contactar con soporte")
 	private int age;
 	
-	@NotNull
-	@Email
+	@NotBlank(message = "El campo E-Mail no puede estar vacío")
+	@Email(message = "El formato del email no es válido")
 	private String email;
 	
-	@NotNull
+	
 	private Sex sex;
 	
-	@NotNull
+	
 	private String country;
 	
-	@NotNull
-	@Pattern(regexp="[0-9]{5}", message=" Deben ser 5 valores numéricos")
+	@ZipCode(message = "Introduce un código postal válido en España")
 	private String cp;
+	
 	
 	public String getName() {
 		return name;

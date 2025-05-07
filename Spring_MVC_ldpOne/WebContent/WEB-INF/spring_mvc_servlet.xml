@@ -26,6 +26,12 @@
 	<!-- recursos externos -->
 	<mvc:resources location="/resources/" mapping="/resources/**" />
 
+	<!-- mensajes personalizados de paquete resource -->
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+	
+	<property name="basenames" value="resources/mensajes_es_ES"></property>
+	
+	</bean>
 </beans>
 
 
