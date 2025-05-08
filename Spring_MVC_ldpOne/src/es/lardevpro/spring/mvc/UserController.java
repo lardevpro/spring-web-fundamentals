@@ -3,6 +3,9 @@ package es.lardevpro.spring.mvc;
 
 
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
@@ -13,6 +16,8 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+
 
 
 @Controller
@@ -63,6 +68,32 @@ public class UserController {
 			return "userRegistrationConfirmation";//si no hay error va a la página de confirmación
 		}
 		
+	}
+	
+	@RequestMapping("/hibernateView")
+	public String hibernateConnection(Model model) {
+		
+		boolean connectionFlag = false;
+		String jdbcUrl = "jdbc:mysql://localhost:3306/panaderia?useSSL=false";
+		String pass = "root";
+		String user = "root";
+		
+		
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver"); // para MySQL 5.x
+
+			Connection conex = DriverManager.getConnection(jdbcUrl, user, pass);
+			connectionFlag = true;
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		model.addAttribute("message", connectionFlag);
+		
+		return "hibernateConnection";
+
 	}
 	
 }

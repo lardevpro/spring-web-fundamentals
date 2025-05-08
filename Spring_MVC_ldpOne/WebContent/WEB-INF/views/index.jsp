@@ -12,6 +12,8 @@
 	</h1>
 	
 	<a href="user/viewFormRegister">Ir al registro de usuario</a>
+	<br><br>
+	<a href="user/hibernateView">Ir a la conexión de Hibernate</a>
 	
 </body>
 </html>
