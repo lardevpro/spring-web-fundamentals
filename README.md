@@ -48,12 +48,12 @@ Las **expresiones regulares** se utilizan en la validación de formularios, como
 
 Este proyecto aún está en construcción y se seguirán añadiendo nuevas características, tales como:
 
-- Integración de más validaciones personalizadas.
-- Mejora de la seguridad en las conexiones a la base de datos.
-- Soporte para más motores de plantillas.
-- Optimización de la internacionalización para múltiples idiomas.
+- CRUD con base de datos SQL.
+- Registro de usuarios.
+- Aspectos visuales atractivos.
+entre otras.
 
----
+
 
 
 
