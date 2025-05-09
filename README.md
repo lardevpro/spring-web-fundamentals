@@ -9,7 +9,7 @@ Este proyecto está en construcción y tiene como objetivo demostrar el uso del 
 
 - **Spring Framework**
 - **Hibernate ORM**
-- **JSP / Thymeleaf**
+- **JSP**
 - **MySQL**
 - **Java 8**
 
